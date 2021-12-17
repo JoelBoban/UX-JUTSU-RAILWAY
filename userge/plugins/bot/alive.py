@@ -284,7 +284,7 @@ class Bot_Alive:
     def alive_info(me):
         u_name = " ".join([me.first_name, me.last_name or ""])
         alive_info = f"""
-­<a href="https://t.me/xplugin"><b>𝐕𝐄𝐍𝐎𝐌</a> is spreading.</b>
+­<b>My Style 🙈</b>
 
   🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
   🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
@@ -309,7 +309,9 @@ class Bot_Alive:
                 InlineKeyboardButton(text="🔧  SETTINGS", callback_data="settings_btn"),
             ],
             [
-                InlineKeyboardButton(text="OWNER", url="t.me/joe_noob"),
+                InlineKeyboardButton(
+                    text="OWNER", url="t.me/joe_noob"
+                ),
                 InlineKeyboardButton(text="⚡  REPO", url=Config.UPSTREAM_REPO),
             ],
         ]
