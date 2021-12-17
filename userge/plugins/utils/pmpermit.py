@@ -339,9 +339,9 @@ async def uninvitedPmHandler(message: Message):
     else:
         pmCounter.update({message.from_user.id: 1})
         PMPERMIT_MSG[message.from_user.id] = (
-            await message.reply(
-                noPmMessage.format_map(SafeDict(**user_dict))
-                + "\n`- Protected by USERGE-X`"
+            await message.reply_video(
+                text=f"{noPmMessage.format_map(SafeDict(**user_dict))}",
+                video="https://telegra.ph/file/b130e952279c45bf56ee7.mp4"
             )
         ).message_id
         await asyncio.sleep(1)
