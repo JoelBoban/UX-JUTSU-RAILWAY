@@ -85,8 +85,9 @@ def post_to_telegraph(a_title: str, content: str) -> str:
     link_ = resp["url"]
     return link_
 
+
 def p_to_t(a_title: str, content: str) -> str:
-    """ Create a Telegram Post using HTML Content """
+    """Create a Telegram Post using HTML Content"""
     post_client = TelegraphPoster(use_api=True)
     auth_name = "DarkzzAngel"
     post_client.create_api_token(auth_name)
@@ -94,11 +95,9 @@ def p_to_t(a_title: str, content: str) -> str:
         title=a_title,
         author=auth_name,
         author_url="https://t.me/joe_noob",
-        text=content
+        text=content,
     )
-    return post_page['url']
-
-
+    return post_page["url"]
 
 
 async def runcmd(cmd: str) -> Tuple[str, str, int, int]:
