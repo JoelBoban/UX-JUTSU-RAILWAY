@@ -15,9 +15,9 @@ import shlex
 from os.path import basename
 from typing import List, Optional, Tuple
 
+from html_telegraph_poster import TelegraphPoster
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from telegraph import Telegraph
-from html_telegraph_poster import TelegraphPoster
 from ujson import loads
 
 import userge
