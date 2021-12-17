@@ -288,7 +288,7 @@ class Bot_Alive:
 
   🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
   🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
-  🧬   <b>𝑿                :</b>    <code>v{get_version()}</code>
+  🧬   <b>USERGE-X                :</b>    <code>v{get_version()}</code>
   👤   <b>User          :</b>    <code>{u_name}</code>
   <b>{Bot_Alive._get_mode()}</b>        <code>|</code>    🕔  <b>{userge.uptime}</b>
 """
@@ -297,10 +297,10 @@ class Bot_Alive:
     @staticmethod
     def _get_mode() -> str:
         if RawClient.DUAL_MODE:
-            return "↕️   DUAL"
+            return "   DUAL"
         if Config.BOT_TOKEN:
-            return "🤖  BOT"
-        return "👤  USER"
+            return "  BOT"
+        return "  USER"
 
     @staticmethod
     def alive_buttons() -> InlineKeyboardMarkup:
@@ -310,7 +310,7 @@ class Bot_Alive:
             ],
             [
                 InlineKeyboardButton(
-                    text="✖️  XPLUGINS", url="t.me/ux_xplugin_support"
+                    text="OWNER", url="t.me/joe_noob"
                 ),
                 InlineKeyboardButton(text="⚡  REPO", url=Config.UPSTREAM_REPO),
             ],
