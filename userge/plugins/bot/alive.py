@@ -309,9 +309,7 @@ class Bot_Alive:
                 InlineKeyboardButton(text="🔧  SETTINGS", callback_data="settings_btn"),
             ],
             [
-                InlineKeyboardButton(
-                    text="OWNER", url="t.me/joe_noob"
-                ),
+                InlineKeyboardButton(text="OWNER", url="t.me/joe_noob"),
                 InlineKeyboardButton(text="⚡  REPO", url=Config.UPSTREAM_REPO),
             ],
         ]
